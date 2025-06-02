@@ -231,7 +231,7 @@
     "shiki": "3.2.2",
     "openai@npm:^4.87.3": "patch:openai@npm%3A4.96.0#~/.yarn/patches/openai-npm-4.96.0-0665b05cb9.patch",
     "registry-js": "1.15.0",
-    "cross-spawn": "7.0.5",
+    "cross-spawn": "7.0.6",
     "tar-fs": "2.1.2"
   },
   "packageManager": "yarn@4.6.0",
