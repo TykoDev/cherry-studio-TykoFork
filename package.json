@@ -228,7 +228,7 @@
     "openai@npm:^4.77.0": "patch:openai@npm%3A4.96.0#~/.yarn/patches/openai-npm-4.96.0-0665b05cb9.patch",
     "pkce-challenge@npm:^4.1.0": "patch:pkce-challenge@npm%3A4.1.0#~/.yarn/patches/pkce-challenge-npm-4.1.0-fbc51695a3.patch",
     "app-builder-lib@npm:26.0.13": "patch:app-builder-lib@npm%3A26.0.13#~/.yarn/patches/app-builder-lib-npm-26.0.13-a064c9e1d0.patch",
-    "shiki": "3.2.2",
+    "shiki": "3.6.0",
     "openai@npm:^4.87.3": "patch:openai@npm%3A4.96.0#~/.yarn/patches/openai-npm-4.96.0-0665b05cb9.patch",
     "registry-js": "1.15.0",
     "cross-spawn": "7.0.6",
