@@ -164,7 +164,7 @@
     "dotenv": "^16.0.0",
     "dotenv-cli": "^7.4.2",
     "electron": "31.7.6",
-    "electron-builder": "26.0.15",
+    "electron-builder": "26.0.16",
     "electron-devtools-installer": "^3.2.0",
     "electron-icon-builder": "^2.0.1",
     "electron-vite": "^2.3.0",
