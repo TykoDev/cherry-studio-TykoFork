@@ -138,10 +138,9 @@ support@tykotech-fork.com ⭐️ Star History
 
 ## Prerequisites
 
-- Node.js v20.x or newer
+- Node.js v20.x or newer (v20 LTS recommended)
 - Yarn v4.6.0 (using Corepack)
-- Ensure outbound network access to npm registry (configure or disable proxy/firewall as needed)
-
+- Vite v6.3.5
 ## Quick Start
 
 ```bash
