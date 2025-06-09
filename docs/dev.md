@@ -27,29 +27,7 @@ This document explains how to set up your environment for TykoTech Fork developm
 
 Run `yarn install` to fetch dependencies. If it fails with network errors, revisit the proxy settings above.
 
-## Test
 
-After installation you can run the test suite:
-
-# TykoTech Fork Development Guide
-
-This document describes how to set up a development environment for TykoTech Fork.
-
-## Requirements
-
-- **Node.js** v20 or newer
-- **Yarn** v4.6.0 (managed via Corepack)
-
-## Setup
-
-Run the following commands to prepare your environment:
-
-```bash
-corepack enable
-corepack prepare yarn@4.6.0 --activate
-# Install dependencies
-yarn install
-```
 
 ## Starting the App in Development Mode
 
