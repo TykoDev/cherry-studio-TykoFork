@@ -150,6 +150,8 @@ corepack prepare yarn@4.6.0 --activate
 
 # Install dependencies
 yarn install
+# Install native Electron dependencies
+yarn postinstall
 
 # Ensure this completes without errors before running `yarn build` or `yarn postinstall`
 
