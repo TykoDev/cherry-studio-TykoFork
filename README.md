@@ -185,4 +185,8 @@ yarn build:linux
 ---
 ```
 
-Remember to run `yarn npm audit` regularly to catch vulnerable dependencies.
+
+## Security Audit
+
+Run `yarn npm audit` regularly to check for vulnerabilities in your dependencies. Update any packages with moderate, high, or critical issues using `yarn up <package>` and commit the changes.
+

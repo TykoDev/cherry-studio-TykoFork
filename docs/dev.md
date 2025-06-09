@@ -60,14 +60,10 @@ yarn test
 
 ## Checking for Vulnerabilities
 
-After installing dependencies, run `yarn npm audit` to scan for known security
-issues:
+Run `yarn npm audit` to scan your dependencies. The command lists any packages with known vulnerabilities and their severity.
 
-```bash
-yarn npm audit
-```
+- **Moderate**: update affected packages soon with `yarn up <package>`.
+- **High** or **Critical**: update immediately, either by adjusting `package.json` or running `yarn up <package>`.
 
-The command lists vulnerabilities grouped by severity. Focus on packages marked
-**moderate**, **high**, or **critical**. Upgrade affected dependencies with
-`yarn up <package>` and commit the updated `yarn.lock`. If a fix is not
-available, consult the maintainers or open an issue for guidance.
+After updating, run the audit again to confirm the issues are fixed.
+
