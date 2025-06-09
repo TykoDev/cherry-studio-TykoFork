@@ -148,8 +148,28 @@ support@tykotech-fork.com ⭐️ Star History
 corepack enable
 corepack prepare yarn@4.6.0 --activate
 
-# Install dependencies
+# Install dependencies (must succeed before running `yarn build` or `yarn postinstall`)
 yarn install
+# Install native Electron dependencies
+yarn postinstall
+
+# Ensure this completes without errors before running `yarn build` or `yarn postinstall`
+
+# If native electron dependencies fail to build run:
+# yarn postinstall
+
+# Optionally verify installation
+# yarn preflight
+
+# Install native Electron dependencies
+yarn postinstall
+
+# Optionally verify installation
+yarn preflight
+
+# If electron dependencies were not installed automatically
+# you can run this manually
+yarn postinstall
 
 # Start development server
 yarn dev
@@ -165,6 +185,8 @@ yarn build:linux
 ---
 ```
 
+
 ## Security Audit
 
 Run `yarn npm audit` regularly to check for vulnerabilities in your dependencies. Update any packages with moderate, high, or critical issues using `yarn up <package>` and commit the changes.
+
