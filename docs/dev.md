@@ -11,17 +11,18 @@ This document explains how to set up your environment for TykoTech Fork developm
    corepack enable
    corepack prepare yarn@4.6.0 --activate
    ```
-3. Check your network configuration. TykoTech Fork downloads packages from npm. If you are behind a proxy or firewall, configure the `HTTP_PROXY` and `HTTPS_PROXY` environment variables or remove them if they prevent access.
-   ```bash
-   # Example of removing proxies if installs fail
-   unset HTTP_PROXY HTTPS_PROXY
-   npm config delete proxy
-   npm config delete https-proxy
-   ```
-   Verify connectivity with:
-   ```bash
-   ping registry.npmjs.org
-   ```
+3. Check your network configuration. TykoTech Fork downloads packages from npm. If you are behind a proxy or firewall, set the `HTTP_PROXY` and `HTTPS_PROXY` variables. If installs fail, see [Proxy Troubleshooting](#proxy-troubleshooting).
+
+### Proxy Troubleshooting
+If installs fail or you receive network errors, clear the proxy settings and test connectivity:
+
+```bash
+unset HTTP_PROXY HTTPS_PROXY
+npm config delete proxy
+npm config delete https-proxy
+ping registry.npmjs.org
+```
+
 
 ## Install Dependencies
 
