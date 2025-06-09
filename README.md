@@ -174,3 +174,5 @@ yarn build:linux
 
 ---
 ```
+
+Remember to run `yarn npm audit` regularly to catch vulnerable dependencies.
