@@ -8,4 +8,5 @@ if (!fs.existsSync(nodeModulesPath)) {
   process.exitCode = 1;
 } else {
   console.log('node_modules present.');
+
 }

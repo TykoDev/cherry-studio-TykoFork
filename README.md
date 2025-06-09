@@ -148,7 +148,7 @@ support@tykotech-fork.com ⭐️ Star History
 corepack enable
 corepack prepare yarn@4.6.0 --activate
 
-# Install dependencies
+# Install dependencies (must succeed before running `yarn build` or `yarn postinstall`)
 yarn install
 # Install native Electron dependencies
 yarn postinstall
@@ -162,6 +162,13 @@ yarn postinstall
 # yarn preflight
 
 # Install native Electron dependencies
+yarn postinstall
+
+# Optionally verify installation
+yarn preflight
+
+# If electron dependencies were not installed automatically
+# you can run this manually
 yarn postinstall
 
 # Start development server
