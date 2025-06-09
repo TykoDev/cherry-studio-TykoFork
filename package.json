@@ -37,6 +37,7 @@
     "build:linux": "powershell.exe -Command \"& { dotenv | Out-Null; npm run build; yarn copy-resources; electron-builder --linux --x64 --arm64 }\"",
     "build:linux:arm64": "powershell.exe -Command \"& { dotenv | Out-Null; npm run build; yarn copy-resources; electron-builder --linux --arm64 }\"",
     "build:linux:x64": "powershell.exe -Command \"& { dotenv | Out-Null; npm run build; yarn copy-resources; electron-builder --linux --x64 }\"",
+    "build:current_os": "node scripts/build-current-os.js",
     "build:npm": "node scripts/build-npm.js",
     "release": "node scripts/version.js",
     "publish": "powershell.exe -Command \"& { dotenv | Out-Null; yarn build:check; yarn release patch push }\"",
