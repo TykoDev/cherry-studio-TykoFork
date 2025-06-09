@@ -16,6 +16,8 @@ If you prefer to build the application yourself:
 corepack enable
 corepack prepare yarn@4.6.0 --activate
 yarn install
+# Install native Electron dependencies
+yarn postinstall
 # Build for your current platform
 yarn build:current_os
 ```
