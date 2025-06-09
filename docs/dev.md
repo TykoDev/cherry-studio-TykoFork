@@ -79,3 +79,12 @@ Run all test suites with:
 ```bash
 yarn test
 ```
+
+## Checking for Vulnerabilities
+
+Run `yarn npm audit` to scan your dependencies. The command lists any packages with known vulnerabilities and their severity.
+
+- **Moderate**: update affected packages soon with `yarn up <package>`.
+- **High** or **Critical**: update immediately, either by adjusting `package.json` or running `yarn up <package>`.
+
+After updating, run the audit again to confirm the issues are fixed.
