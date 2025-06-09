@@ -14,4 +14,5 @@ try {
   console.error(`Failed to execute build command: "${cmd}".`);
   console.error(`Error: ${error.message}`);
   process.exit(1);
+
 }
