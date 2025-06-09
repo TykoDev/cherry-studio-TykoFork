@@ -140,6 +140,7 @@ support@tykotech-fork.com ⭐️ Star History
 
 - Node.js v20.x or newer
 - Yarn v4.6.0 (using Corepack)
+- Ensure outbound network access to npm registry (configure or disable proxy/firewall as needed)
 
 ## Quick Start
 
