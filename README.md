@@ -150,7 +150,17 @@ corepack prepare yarn@4.6.0 --activate
 
 # Install dependencies
 yarn install
-If installation fails due to network issues, see the [Proxy Troubleshooting](docs/dev.md#proxy-troubleshooting) section.
+
+# Ensure this completes without errors before running `yarn build` or `yarn postinstall`
+
+# If native electron dependencies fail to build run:
+# yarn postinstall
+
+# Optionally verify installation
+# yarn preflight
+
+# Install native Electron dependencies
+yarn postinstall
 
 # Start development server
 yarn dev
@@ -165,3 +175,5 @@ yarn build:linux
 
 ---
 ```
+
+Remember to run `yarn npm audit` regularly to catch vulnerable dependencies.
