@@ -150,6 +150,7 @@ corepack prepare yarn@4.6.0 --activate
 
 # Install dependencies
 yarn install
+If installation fails due to network issues, see the [Proxy Troubleshooting](docs/dev.md#proxy-troubleshooting) section.
 
 # Start development server
 yarn dev
