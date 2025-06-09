@@ -40,7 +40,7 @@
     "build:npm": "node scripts/build-npm.js",
     "release": "node scripts/version.js",
     "publish": "powershell.exe -Command \"& { dotenv | Out-Null; yarn build:check; yarn release patch push }\"",
-    "pulish:artifacts": "cd packages/artifacts; npm publish; cd -",
+    "publish:artifacts": "cd packages/artifacts; npm publish; cd -",
     "generate:agents": "node scripts/generate-agents.js",
     "generate:icons": "electron-icon-builder --input=./build/logo.png --output=build",
     "analyze:renderer": "VISUALIZER_RENDERER=true yarn build",
