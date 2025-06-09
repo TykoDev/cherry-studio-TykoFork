@@ -8,5 +8,10 @@ if (platform === 'win32') {
 } else {
   cmd = 'yarn build:linux';
 }
-execSync(cmd, { stdio: 'inherit' });
-
+try {
+  execSync(cmd, { stdio: 'inherit' });
+} catch (error) {
+  console.error(`Failed to execute build command: "${cmd}".`);
+  console.error(`Error: ${error.message}`);
+  process.exit(1);
+}
