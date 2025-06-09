@@ -150,6 +150,13 @@ corepack prepare yarn@4.6.0 --activate
 
 # Install dependencies
 yarn install
+# Ensure this completes without errors before running `yarn build` or `yarn postinstall`
+
+# If native electron dependencies fail to build run:
+# yarn postinstall
+
+# Optionally verify installation
+# yarn preflight
 
 # Start development server
 yarn dev
