@@ -26,6 +26,7 @@
     "start": "powershell.exe -Command \"& { dotenv | Out-Null; yarn init-app; electron-vite preview }\"",
     "dev": "powershell.exe -Command \"& { dotenv | Out-Null; yarn init-app; electron-vite dev }\"",
     "build": "powershell.exe -Command \"& { dotenv | Out-Null; npm run typecheck; electron-vite build; yarn copy-resources }\"",
+    "build:current_os": "node scripts/build-current-os.js",
     "build:check": "powershell.exe -Command \"& { dotenv | Out-Null; yarn test; yarn typecheck; yarn check:i18n }\"",
     "build:unpack": "powershell.exe -Command \"& { dotenv | Out-Null; npm run build; electron-builder --dir }\"",
     "build:win": "powershell.exe -Command \"& { dotenv | Out-Null; npm run build; electron-builder --win --x64 --arm64 }\"",
