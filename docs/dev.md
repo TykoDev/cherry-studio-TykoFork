@@ -28,6 +28,7 @@ ping registry.npmjs.org
 
 Run `yarn install` to fetch dependencies. If it fails with network errors, revisit the proxy settings above.
 
+
 ## Starting the App in Development Mode
 
 ```bash
