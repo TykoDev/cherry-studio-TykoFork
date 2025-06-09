@@ -1,8 +1,12 @@
+#!/usr/bin/env node
 const fs = require('fs');
+const path = require('path');
 
-if (!fs.existsSync('node_modules')) {
-  console.warn('No node_modules directory found. Please run "yarn install" first.');
+const nodeModulesPath = path.join(__dirname, '..', 'node_modules');
+if (!fs.existsSync(nodeModulesPath)) {
+  console.warn('node_modules directory not found. Run "yarn install" first.');
   process.exitCode = 1;
 } else {
-  console.log('Dependencies present.');
+  console.log('node_modules present.');
+
 }
