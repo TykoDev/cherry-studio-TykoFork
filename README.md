@@ -139,7 +139,8 @@ support@tykotech-fork.com ⭐️ Star History
 ## Prerequisites
 
 - Node.js v20.x or newer
-- Yarn v4.6.0 (using Corepack)
+ - Yarn v4.6.0 (using Corepack)
+ - Vite v6.3.5
 
 ## Quick Start
 
