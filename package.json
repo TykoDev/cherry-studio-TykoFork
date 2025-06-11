@@ -115,7 +115,7 @@
     "@agentic/tavily": "^7.3.3",
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "@antfu/eslint-config": "^4.13.2",
-    "@anthropic-ai/sdk": "^0.41.0",
+    "@anthropic-ai/sdk": "^0.54.0",
     "@electron-toolkit/eslint-config-prettier": "^3.0.0",
     "@electron-toolkit/eslint-config-ts": "^3.0.0",
     "@electron-toolkit/preload": "^3.0.0",
