@@ -181,7 +181,7 @@
     "lint-staged": "^15.5.0",
     "lodash": "^4.17.21",
     "lru-cache": "^11.1.0",
-    "lucide-react": "^0.487.0",
+    "lucide-react": "^0.515.0",
     "mime": "^4.0.4",
     "motion": "^12.10.5",
     "npx-scope-finder": "^1.2.0",
